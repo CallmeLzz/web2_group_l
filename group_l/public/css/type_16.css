@@ -1,0 +1,169 @@
+.type_16 .clear {
+  clear: both;
+}
+.type_16 .type_16_weather .main-wrapper {
+  margin: 0 auto;
+  max-width: 1170px;
+}
+.type_16 .type_16_weather .main-wrapper .absolute-header {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  position: relative;
+  line-height: 1.6;
+  z-index: 1;
+  font-family: 'Roboto';
+  font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+.type_16 .type_16_weather .main-wrapper .absolute-header .fa {
+  margin-right: .5rem;
+  font-size: larger;
+}
+.type_16 .type_16_weather .main-wrapper .absolute-header span,
+.type_16 .type_16_weather .main-wrapper .absolute-header em {
+  font-family: 'Roboto';
+  font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+.type_16 .type_16_weather .main-wrapper .absolute-header .simple-weather {
+  line-height: 1.6;
+  display: inline-block;
+}
+.type_16 .type_16_weather .main-wrapper .absolute-header .simple-weather .simple-weather__day {
+  display: inline-block;
+  margin-right: 2em;
+}
+.type_16 .type_16_weather .main-wrapper .absolute-header .simple-weather span {
+  text-transform: uppercase;
+  display: inline-block;
+  margin-left: 1.5rem;
+}
+.type_16 .type_16_weather .main-wrapper .absolute-header .simple-weather span:first-of-type {
+  margin-left: 0;
+}
+.type_16 .type_16_content .vc_row {
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: 0;
+}
+.type_16 .type_16_content .vc_row .parallax-image {
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15), 0 7px 15px rgba(0,0,0,0.42);
+  border: 7px solid #fff;
+  background-color: #fff;
+  max-width: 260px;
+  height: auto;
+}
+.type_16 .type_16_content .vc_row .parallax-image:nth-of-type(1) {
+  -webkit-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+.type_16 .type_16_content .vc_row .pt1 {
+  position: absolute;
+  top: -80.959px;
+  left: 12%;
+  z-index: 1;
+}
+.type_16 .type_16_content .vc_row .pt2 {
+  position: absolute;
+  top: 140.038px;
+  left: 24%;
+}
+.type_16 .type_16_content .vc_row .pt3 {
+  left: 17%;
+  top: 57px;
+  z-index: 1;
+}
+.type_16 .type_16_content .vc_row .parallax-image:nth-of-type(2) {
+  -webkit-transform: rotate(7deg);
+  transform: rotate(7deg);
+}
+.type_16 .type_16_content .vc_row .parallax-image:nth-of-type(3) {
+  -webkit-transform: rotate(16deg);
+  transform: rotate(16deg);
+}
+.type_16 .type_16_content .vc_row .vc_column-inner {
+  padding-top: 0;
+}
+.type_16 .type_16_content .vc_row h2 {
+  line-height: 1.2;
+  margin: 2.8rem 0 1.4rem;
+  position: relative;
+  font-family: 'Domine';
+  font-weight: normal;
+  font-style: normal;
+  text-transform: none;
+  font-size: 3rem;
+  color: #363d40;
+}
+.type_16 .type_16_content .vc_row h2 small {
+  color: inherit;
+  font-size: 50%;
+  font-weight: normal;
+  display: block;
+  opacity: 0.8;
+  line-height: 1.2;
+}
+.type_16 .type_16_content .vc_row p {
+  margin: 2.8rem 0 1.4rem;
+  font-family: 'Roboto';
+  font-weight: 300;
+  text-transform: none;
+  font-size: 1.4rem;
+  margin-top: 0;
+}
+.type_16 .type_16_content .vc_custom_1456180226251 {
+  background-image: url(../images/bg-parallax-3.jpg) !important;
+  background-position: center;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+.type_16 .type_16_reservation .vc_custom_1436823427497 {
+  padding-top: 2.8rem !important;
+  padding-bottom: 2.8rem !important;
+  background-color: #f0f1f2 !important;
+}
+.type_16 .type_16_reservation .vc_row {
+  margin-bottom: 0;
+}
+.type_16 .type_16_reservation .vc_row .vc_column-inner {
+  padding-top: 0;
+}
+.type_16 .type_16_reservation .vc_customer {
+  position: relative;
+  box-sizing: border-box;
+  padding-left: 46.5px;
+  padding-right: 46.5px;
+}
+.type_16 .type_16_reservation .row:last-of-type {
+  margin-bottom: 0 !important;
+}
+.type_16 .type_16_reservation .form-control {
+  border-color: rgba(102,114,121,0.25);
+  color: #667279;
+}
+.type_16 .type_16_reservation .btn {
+  font-weight: 500;
+  height: auto;
+  -webkit-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  outline: none !important;
+  font-weight: bold;
+}
+.type_16 .type_16_reservation .btn-block {
+  display: block;
+  padding-left: 0;
+  padding-right: 0;
+}
+.type_16 .type_16_reservation .btn-primary {
+  background-color: #c0392b;
+  border-color: #c0392b;
+  color: #ffffff;
+}
