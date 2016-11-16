@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Menu;
+//use App\Menu;
 
 class HomeController extends Controller
 {
@@ -11,31 +11,28 @@ class HomeController extends Controller
     	$this->data = array();
     }
     public function index(){
-    	$data = Menu::where('menu_id', 'M01')->get();
+    	//$data = Menu::where('menu_id', 'M01')->get();
 
     	//$user_ip = getenv('REMOTE_ADDR');
 
-        if (pingAddress("http://www.geoplugin.net/php.gp") == 1) {
+        /*if (pingAddress("http://www.geoplugin.net/php.gp") == 1) {
             $geo = unserialize(file_get_contents("http://www.geoplugin.net/php.gp"));//?ip=$user_ip"));
             $country = $geo["geoplugin_countryName"];
             $city = $geo["geoplugin_city"];
         }
-        else {
+        else {*/
             $country = 'Vietnam';
             $city = 'Da Lat city';
-        }
 
         $currDay = date('l');
         $nextDay = date('l',strtotime("tomorrow"));
-    	
-        $this->pingAddress("www.google.com");
 
-    	/*return view('front.home.index')->with([
+    	return view('front.home.index')->with([
             'country' => $country,
             'city' => $city,
             'currentDay' => $currDay,
             'nextDay' => $nextDay
-            ]);*/
+            ]);
     }
 
     public function pingAddress($ip) {

@@ -1,4 +1,4 @@
-@extends('front.masterpage.masterpage')
+@extends('front.masterpage')
 
 @section('title', 'Home')
 

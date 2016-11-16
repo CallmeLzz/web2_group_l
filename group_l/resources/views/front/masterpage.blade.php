@@ -2,14 +2,14 @@
 <html>
 	<head>
 		<title> @yield('title') </title>
-		@include('front.masterpage.head')
+		@include('front.layout.head')
 	</head>
 
 	<body>
-		@include('front.masterpage.header')
+		@include('front.layout.header')
 		
 		@yield('content')
 
-		@include('front.masterpage.footer')
+		@include('front.layout.footer')
 	</body>
 </html>
