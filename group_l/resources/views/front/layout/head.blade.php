@@ -34,6 +34,8 @@
 <link rel="stylesheet" href="css/animate.css">
 <link rel="stylesheet" type="text/css" href="css/banner.css">
 <link rel="stylesheet" type="text/css" href="css/type-34.css">
+<link rel="stylesheet" type="text/css" href="css/detail-1.css">
+<link rel="stylesheet" type="text/css" href="css/detail-2.css">
 
 <script src="js/jquery-3.1.1.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
