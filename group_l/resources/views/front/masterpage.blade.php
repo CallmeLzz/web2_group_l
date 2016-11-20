@@ -3,6 +3,7 @@
 	<head>
 		<title> @yield('title') </title>
 		@include('front.layout.head')
+		@yield('script')
 	</head>
 
 	<body>

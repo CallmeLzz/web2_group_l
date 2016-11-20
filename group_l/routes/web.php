@@ -15,7 +15,15 @@
     return view('welcome');
 });*/
 
-Route::get('/', [
+/*Route::get('/', [
 	'as' => 'home',
 	'uses' => 'HomeController@index'
+	]);*/
+/*Route::get('/', [
+	'as' => 'detail',
+	'uses' => 'DetailController@index'
+	]);*/
+Route::get('/', [
+	'as' => 'category',
+	'uses' => 'CategoryController@index'
 	]);
