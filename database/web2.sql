@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 21, 2016 at 06:37 AM
+-- Generation Time: Nov 21, 2016 at 05:04 PM
 -- Server version: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -21,6 +21,31 @@ SET time_zone = "+00:00";
 --
 CREATE DATABASE IF NOT EXISTS `web2` DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 USE `web2`;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `categories`
+--
+
+DROP TABLE IF EXISTS `categories`;
+CREATE TABLE `categories` (
+  `category_id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `category_title` varchar(70) COLLATE utf8_unicode_ci NOT NULL,
+  `category_type` int(2) NOT NULL,
+  `category_content` varchar(500) COLLATE utf8_unicode_ci NOT NULL,
+  `category_img` varchar(50) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `categories`
+--
+
+INSERT INTO `categories` (`category_id`, `category_title`, `category_type`, `category_content`, `category_img`) VALUES
+('cate03', 'round cove suite', 3, 'Quae vero auctorem tractata ab fiducia dicuntur. Morbi fringilla convallis sapien, id pulvinar odio volutpat', 'images/detail/content-room-1024x768.jpg'),
+('cate05', 'signature junior suite', 5, 'Quae vero auctorem tractata ab fiducia dicuntur. Morbi fringilla convallis sapien, id pulvinar odio volutpat', 'images/detail/content-rooms-3.jpg'),
+('cate01', 'Rooms Listing', 1, '', 'images/bg-header-6.jpg'),
+('cate02', 'Unam incolunt Belgae, aliam Aquitani, tertiam. Idque Caesaris facere', 2, 'Salutantibus vitae elit libero, \n	a pharetra augue. At nos hinc posthac, sitientis piros Afros. Quisque ut dolor gravida, placerat libero vel, euismod. \n    Ut enim ad minim veniam, quis nostrud exercitation. Unam incolunt Belgae, aliam Aquitani, tertiam. Unam incolunt Belgae, \n    aliam Aquitani, tertiam. Tityre, tu patulae recubans sub tegmine fagi dolor. Curabitur est gravida.', 'images/content-rooms-4.jpg');
 
 -- --------------------------------------------------------
 
@@ -88,6 +113,32 @@ CREATE TABLE `news` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `prices`
+--
+
+DROP TABLE IF EXISTS `prices`;
+CREATE TABLE `prices` (
+  `price_id` int(3) NOT NULL,
+  `price_title` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `price_rate` int(3) NOT NULL,
+  `price_type` int(2) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `prices`
+--
+
+INSERT INTO `prices` (`price_id`, `price_title`, `price_rate`, `price_type`) VALUES
+(1, 'Round Cove Suite', 180, 1),
+(2, 'Signature Water View', 160, 2),
+(3, 'Signature Water Side', 140, 3),
+(4, 'Signature Junior Suite', 120, 4),
+(5, 'English & Continental Breakfast', 10, 5),
+(6, '24h Wifi Access', 10, 6);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `reservations`
 --
 
@@ -108,6 +159,12 @@ CREATE TABLE `reservations` (
 --
 
 --
+-- Indexes for table `categories`
+--
+ALTER TABLE `categories`
+  ADD PRIMARY KEY (`category_id`);
+
+--
 -- Indexes for table `menus`
 --
 ALTER TABLE `menus`
@@ -126,6 +183,12 @@ ALTER TABLE `news`
   ADD PRIMARY KEY (`news_id`);
 
 --
+-- Indexes for table `prices`
+--
+ALTER TABLE `prices`
+  ADD PRIMARY KEY (`price_id`);
+
+--
 -- Indexes for table `reservations`
 --
 ALTER TABLE `reservations`
@@ -140,6 +203,11 @@ ALTER TABLE `reservations`
 --
 ALTER TABLE `news`
   MODIFY `news_id` int(10) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `prices`
+--
+ALTER TABLE `prices`
+  MODIFY `price_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
