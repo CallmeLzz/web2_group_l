@@ -12,30 +12,14 @@
 									</h2>
 									<table class="table table-responsive">
 										<tbody>
+										@if(isset($price))
+											@foreach($price as $value)
 											<tr>
-												<td class="text-left"><strong>Round Cove Suite</strong></td>
-												<td class="text-right">$180</td>
+												<td class="text-left"><strong>{{ $value->price_title }}</strong></td>
+												<td class="text-right">${{ $value->price_rate }}</td>
 											</tr>
-											<tr>
-												<td class="text-left"><strong>Signature Water View</strong></td>
-												<td class="text-right">$160</td>
-											</tr>
-											<tr>
-												<td class="text-left"><strong>Signature Water Side</strong></td>
-												<td class="text-right">$140</td>
-											</tr>
-											<tr>
-												<td class="text-left"><strong>Signature Junior Suite</strong></td>
-												<td class="text-right">$120</td>
-											</tr>
-											<tr>
-												<td class="text-left">English &amp; Continental Breakfast</td>
-												<td class="text-right">$10</td>
-											</tr>
-											<tr>
-												<td class="text-left">24h Wifi Access</td>
-												<td class="text-right">$10</td>
-											</tr>
+											@endforeach
+										@endif
 										</tbody>
 									</table>
 								</div>

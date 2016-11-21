@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
-                    <a href="#" id="logo">
+                    <a href="/" id="logo">
                 <span>
                 <img src="images/logo/leisure.png" class="logo-img">
                 </span>
@@ -17,14 +17,14 @@
                                 </a>
                                 <ul class="sub-menu lv2">
                                     <li class="top">
-                                        <a href="#">
+                                        <a href="/">
                                             black hotel
                                         </a>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">resort</a>
+                                <a href="category">resort</a>
                                 <ul class="sub-menu lv2">
                                     <li class="top menu">
                                         <a href="#">
@@ -67,7 +67,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">revreation
+                                <a href="category">revreation
                                 </a>
                                 <ul class="sub-menu lv2">
                                     <li class="top">
@@ -83,15 +83,15 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">events
+                                <a href="category">events
                                 </a>
                             </li>
                             <li>
-                                <a href="#">news
+                                <a href="category">news
                                 </a>
                             </li>
                             <li>
-                                <a href="#">features
+                                <a href="category">features
                                 </a>
                                 <ul class="sub-menu lv2">
                                     <li class="top">
@@ -146,7 +146,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">contact
+                                <a href="category">contact
                                 </a>
                                 <ul class="sub-menu lv2">
                                     <li class="top">
