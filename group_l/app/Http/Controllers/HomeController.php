@@ -12,7 +12,13 @@ class HomeController extends Controller
     	$this->data = array();
     }
     public function index(){
-    	//$data = Menu::where('menu_id', 'M01')->get();
+    	$menu = new Menus();
+        $result_menu = $menu->getParent();
+
+
+        /*$allmenu = $menu->getData(null);
+        echo $allmenu;
+        die();*/
 
     	//$user_ip = getenv('REMOTE_ADDR');
 
@@ -31,13 +37,14 @@ class HomeController extends Controller
         else echo "Dead";*/
 
         $banner = new Banners();
-        $result = $banner->getData();
+        $result_banner = $banner->getData();
     	return view('front.home.index')->with([
             'country' => $country,
             'city' => $city,
             'currentDay' => $currDay,
             'nextDay' => $nextDay,
-            'banner' => $result
+            'banner' => $result_banner,
+            'menu' => $result_menu
             ]);
     }
 

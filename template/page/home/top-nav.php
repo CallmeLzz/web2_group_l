@@ -1,10 +1,9 @@
-@include('front.home.type_16.weather')
-<div class="type-34">
+<body>
     <div class="top-nav">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
-                    <a href="/" id="logo">
+                    <a href="#" id="logo">
                 <span>
                 <img src="images/logo/leisure.png" class="logo-img">
                 </span>
@@ -17,16 +16,14 @@
                                 </a>
                                 <ul class="sub-menu lv2">
                                     <li class="top">
-                                        <a href="/">
+                                        <a href="#">
                                             black hotel
                                         </a>
                                     </li>
                                 </ul>
                             </li>
-                            @if(isset($menu))
-                                @foreach($menu as $value)
                             <li>
-                                <a href="category">{{ $value->menu_title }}</a>
+                                <a href="#">resort</a>
                                 <ul class="sub-menu lv2">
                                     <li class="top menu">
                                         <a href="#">
@@ -68,11 +65,8 @@
                                     </li>
                                 </ul>
                             </li>
-                                @endforeach
-                            @endif                            
-                            <!-- 
                             <li>
-                                <a href="category">revreation
+                                <a href="#">revreation
                                 </a>
                                 <ul class="sub-menu lv2">
                                     <li class="top">
@@ -88,15 +82,15 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="category">events
+                                <a href="#">events
                                 </a>
                             </li>
                             <li>
-                                <a href="category">news
+                                <a href="#">news
                                 </a>
                             </li>
                             <li>
-                                <a href="category">features
+                                <a href="#">features
                                 </a>
                                 <ul class="sub-menu lv2">
                                     <li class="top">
@@ -151,7 +145,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="category">contact
+                                <a href="#">contact
                                 </a>
                                 <ul class="sub-menu lv2">
                                     <li class="top">
@@ -166,7 +160,6 @@
                                     </li>
                                 </ul>
                             </li>
-                            -->
                             <li>
                                 <a href="#">
                                     <i class="fa fa-shopping-cart" aria-hidden="true"></i> buy theme
@@ -184,4 +177,4 @@
             </div>
         </div>
     </div>
-</div>
+</body>
