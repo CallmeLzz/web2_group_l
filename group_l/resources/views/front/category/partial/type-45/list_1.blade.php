@@ -13,7 +13,7 @@
                             margin-top: 105px;
                             padding: 0px;
                             color: white;
-                            ">{{ $value->category_title }}</h1>
+                            "><a href="detail">{{ $value->category_title }}</a></h1>
                         <p style="color: rgba(97, 104, 115, 0.63);
                            font-size: 20px;
                            margin-top: -2px;

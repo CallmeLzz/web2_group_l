@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Menu;
+use App\Menus;
+use App\Banners;
 
 class HomeController extends Controller
 {
@@ -26,24 +27,29 @@ class HomeController extends Controller
 
         $currDay = date('l');
         $nextDay = date('l',strtotime("tomorrow"));
+        /*if ($this->pingAddress('http://www.geoplugin.net/php.gp') == 1) echo "Alive";
+        else echo "Dead";*/
 
+        $banner = new Banners();
+        $result = $banner->getData();
     	return view('front.home.index')->with([
             'country' => $country,
             'city' => $city,
             'currentDay' => $currDay,
-            'nextDay' => $nextDay
+            'nextDay' => $nextDay,
+            'banner' => $result
             ]);
     }
 
     public function pingAddress($ip) {
         $pingresult = exec("ping  -n 3 $ip", $outcome, $status);
         if (0 == $status) {
-            //return 1;
-            $status = "alive => ( ".print_r($outcome)." )";
+            return 1;
+            //$status = "alive => ( ".print_r($outcome)." )";
         } else {
-            //return 0;
-            $status = "dead";
+            return 0;
+            //$status = "dead";
         }
-        echo "The IP address, $ip, is  ".$status;
+        //echo "The IP address, $ip, is  ".$status;
     }
 }
