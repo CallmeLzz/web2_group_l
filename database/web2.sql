@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 21, 2016 at 05:04 PM
+-- Generation Time: Nov 22, 2016 at 03:54 AM
 -- Server version: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -21,6 +21,28 @@ SET time_zone = "+00:00";
 --
 CREATE DATABASE IF NOT EXISTS `web2` DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 USE `web2`;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `banners`
+--
+
+DROP TABLE IF EXISTS `banners`;
+CREATE TABLE `banners` (
+  `banner_id` int(3) NOT NULL,
+  `banner_title` varchar(500) COLLATE utf8_unicode_ci NOT NULL,
+  `banner_img` varchar(100) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `banners`
+--
+
+INSERT INTO `banners` (`banner_id`, `banner_title`, `banner_img`) VALUES
+(1, 'Luxury hotel resort at twilight', 'images/photodune-1256180-luxury-hotel-resort-at-twilight-m.jpg'),
+(2, 'Full', 'images/iStock_000010325467_Full1.jpg'),
+(3, 'Splash', 'images/splash.jpg');
 
 -- --------------------------------------------------------
 
@@ -159,6 +181,12 @@ CREATE TABLE `reservations` (
 --
 
 --
+-- Indexes for table `banners`
+--
+ALTER TABLE `banners`
+  ADD PRIMARY KEY (`banner_id`);
+
+--
 -- Indexes for table `categories`
 --
 ALTER TABLE `categories`
@@ -198,6 +226,11 @@ ALTER TABLE `reservations`
 -- AUTO_INCREMENT for dumped tables
 --
 
+--
+-- AUTO_INCREMENT for table `banners`
+--
+ALTER TABLE `banners`
+  MODIFY `banner_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `news`
 --
