@@ -17,6 +17,8 @@
 
             /*======================== ST ========================*/
                 $less->compileFile('less/home/top-nav.less', 'css/home/top-nav.css');
+                $less->compileFile('less/detail/detail-1.less', 'css/detail/detail-1.css');
+                $less->compileFile('less/detail/detail-2.less', 'css/detail/detail-2.css');
             /*======================== endST ========================*/
 
             /*======================== T ========================*/
@@ -36,6 +38,8 @@
         <!-- ======================== ST ======================== -->
             <link rel="stylesheet" type="text/css" href="css/home/top-nav.css">
             <link rel="stylesheet" type="text/css" href="css/home/type-34.css">
+            <link rel="stylesheet" type="text/css" href="css/detail/detail-1.css">
+            <link rel="stylesheet" type="text/css" href="css/detail/detail-2.css">
             <script type="text/javascript" src="js/script.js"></script>
         <!-- ======================== endST ======================== -->
 
@@ -49,6 +53,9 @@
     <body>
         <?php include'page/masterpage/weather.php'; ?>
         <?php include'page/masterpage/top-nav.php'; ?>
+
+        <?php include'page/detail/detail_1.php'; ?>
+        <?php include'page/detail/detail_2.php'; ?>
 
         <?php include'page/masterpage/footer.php'; ?>
     </body>
