@@ -16,11 +16,13 @@
                 $less->compileFile('less/home/type_16_content.less', 'css/home/type_16_content.css');
                 $less->compileFile('less/home/type_16_reservation.less', 'css/home/type_16_reservation.css');
             /*======================== endMine ========================*/
+            
             /*======================== ST ========================*/
                 $less->compileFile('less/home/top-nav.less', 'css/home/top-nav.css');
                 $less->compileFile('less/home/banner.less', 'css/home/banner.css');
                 $less->compileFile('less/home/type-34.less', 'css/home/type-34.css');
             /*======================== endST ========================*/
+
             /*======================== T ========================*/
                 $less->compileFile('less/masterpage/type_45-footer.less', 'css/masterpage/type_45-footer.css');
             /*======================== endT ========================*/
