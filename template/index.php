@@ -11,37 +11,51 @@
                 include ('libs/lessc.inc.php');
             }
             $less = new lessc;
-            $less->compileFile('less/type_16.less', 'css/type_16.css');
-            $less->compileFile('less/type-34.less', 'css/type-34.css');
-            $less->compileFile('less/banner.less', 'css/banner.css');
-            $less->compileFile('less/top-nav.less', 'css/top-nav.css');
+            /*======================== Mine ========================*/
+                $less->compileFile('less/masterpage/type_16_weather.less', 'css/masterpage/type_16_weather.css');
+                $less->compileFile('less/home/type_16_content.less', 'css/home/type_16_content.css');
+                $less->compileFile('less/home/type_16_reservation.less', 'css/home/type_16_reservation.css');
+            /*======================== endMine ========================*/
+            /*======================== ST ========================*/
+                $less->compileFile('less/home/top-nav.less', 'css/home/top-nav.css');
+                $less->compileFile('less/home/banner.less', 'css/home/banner.css');
+                $less->compileFile('less/home/type-34.less', 'css/home/type-34.css');
+            /*======================== endST ========================*/
         ?>
 
-        <link rel="stylesheet" type="text/css" href="css/owlcarousel/owl.carousel.min.css">
-        <link rel="stylesheet" type="text/css" href="css/owlcarousel/owl.theme.default.min.css">
-        <link rel="stylesheet" type="text/css" href="css/animate.css">
-        <link rel="stylesheet" type="text/css" href="css/banner.css">
         <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="css/weather-icons.min.css">
-        <link rel="stylesheet" type="text/css" href="css/js_composer.min.css">
 
-        <link rel="stylesheet" type="text/css" href="css/type_16.css">
-        <link rel="stylesheet" type="text/css" href="css/type-34.css">
-        <link rel="stylesheet" type="text/css" href="css/banner.css">
-        <link rel="stylesheet" type="text/css" href="css/top-nav.css">
+        <!-- ======================== Mine ======================== -->
+            <link rel="stylesheet" type="text/css" href="css/weather-icons.min.css">
+            <link rel="stylesheet" type="text/css" href="css/js_composer.min.css">
+            <link rel="stylesheet" type="text/css" href="css/masterpage/type_16_weather.css">
+            <link rel="stylesheet" type="text/css" href="css/home/type_16_content.css">
+            <link rel="stylesheet" type="text/css" href="css/home/type_16_reservation.css">
+        <!-- ======================== endMine ======================== -->
 
-        <script src="js/jquery-3.1.1.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="js/script.js"></script>
-        <script src="js/demo-slideshow-2.0.js"></script>
+        <!-- ======================== ST ======================== -->
+            <link rel="stylesheet" type="text/css" href="css/home/top-nav.css">
+            <link rel="stylesheet" type="text/css" href="css/home/banner.css">
+            <link rel="stylesheet" type="text/css" href="css/home/type-34.css">
+
+            <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+            <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+            <script type="text/javascript" src="js/script.js"></script>
+            <script type="text/javascript" src="js/demo-slideshow-2.0.js"></script>
+        <!-- ======================== endST ======================== -->
+        
     </head>
 
     <body>
-        <?php include'page/home/weather.php'; ?>
-        <?php include'page/home/top-nav.php'; ?>
-        <?php include'page/home/banner.php'; ?>
+        <?php include'page/masterpage/weather.php'; ?>
+        
+        <?php //include'page/masterpage/top-nav.php'; ?>
+        <?php //include'page/home/banner.php'; ?>
+
         <?php include'page/home/content_0.php'; ?>
         <?php include'page/home/content_1.php'; ?>
+
+        <?php //include'page/masterpage/footer.php'; ?>
     </body>
 </html>
