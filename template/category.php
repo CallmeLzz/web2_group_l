@@ -29,6 +29,11 @@
             <link rel="stylesheet" type="text/css" href="css/category/type_16_junior_suite.css">
             <link rel="stylesheet" type="text/css" href="css/category/type_16_make_reservation.css">
         <!-- ======================== endMine ======================== -->
+        <!-- ======================== T ======================== -->
+            <link rel="stylesheet" type="text/css" href="css/masterpage/type_45-footer.css">
+            <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+            <script type="text/javascript" src="js/newjavascript.js"></script>
+        <!-- ======================== T ======================== -->
     </head>
 
     <body>
@@ -36,5 +41,7 @@
         <?php include'page/category/round_cove.php'; ?>
         <?php include'page/category/junior_suite.php'; ?>
         <?php include'page/category/make_reservation.php'; ?>
+
+        <?php include'page/masterpage/footer.php'; ?>
     </body>
 </html>

@@ -21,6 +21,9 @@
                 $less->compileFile('less/home/banner.less', 'css/home/banner.css');
                 $less->compileFile('less/home/type-34.less', 'css/home/type-34.css');
             /*======================== endST ========================*/
+            /*======================== T ========================*/
+                $less->compileFile('less/masterpage/type_45-footer.less', 'css/masterpage/type_45-footer.css');
+            /*======================== endT ========================*/
         ?>
 
         <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
@@ -44,7 +47,12 @@
             <script type="text/javascript" src="js/script.js"></script>
             <script type="text/javascript" src="js/demo-slideshow-2.0.js"></script>
         <!-- ======================== endST ======================== -->
-        
+
+        <!-- ======================== T ======================== -->
+            <link rel="stylesheet" type="text/css" href="css/masterpage/type_45-footer.css">
+            <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+            <script type="text/javascript" src="js/newjavascript.js"></script>
+        <!-- ======================== T ======================== -->
     </head>
 
     <body>
@@ -56,6 +64,6 @@
         <?php include'page/home/content_0.php'; ?>
         <?php include'page/home/content_1.php'; ?>
 
-        <?php //include'page/masterpage/footer.php'; ?>
+        <?php include'page/masterpage/footer.php'; ?>
     </body>
 </html>

@@ -47,7 +47,7 @@
                             </ul>
                         </aside>
                         <aside class="col-lg-2 col-md-3 col-sm-4 " style="display: block; opacity: 1;">			
-                            <img src="images/leisure@2x.png" alt="Leisure WordPress Theme" width="165">
+                            <img src="images/masterpage/leisure@2x.png" alt="Leisure WordPress Theme" width="165">
                         </aside>					
                     </div><!-- end .row -->
                     <div class="row" id="absolute-footer">
