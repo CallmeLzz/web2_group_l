@@ -31,7 +31,7 @@
 					<div class="wpb_single_image wpb_content_element vc_align_left">
 						<figure class="wpb_wrapper vc_figure">
 							<div class="vc_single_image-wrapper vc_box_border_grey">
-								<img width="750" height="563" src="images/category/content-rooms-3.jpg" class="vc_single_image-img attachment-large" alt="content-rooms-3" sizes="(max-width: 750px) 100vw, 750px">
+								<img width="750" height="563" src="images/category/content-room-1024x768.jpg" class="vc_single_image-img attachment-large" alt="content-rooms-3" sizes="(max-width: 750px) 100vw, 750px">
 							</div>
 						</figure>
 					</div>
