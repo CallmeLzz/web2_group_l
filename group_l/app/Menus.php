@@ -3,12 +3,13 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Http\Request;
 
 class Menus extends Model
 {
     //
     protected $table = 'menus';
-    protected $primaryKey = 'menu_id';
+    //protected $primaryKey = 'menu_id';
     public $timestamps = false;
     protected $fillable = [
     	'menu_id',
@@ -20,7 +21,28 @@ class Menus extends Model
 	public function getParent(){
 		return self::where('menu_level', '1')->get();
 	}
+	public function getParentCond($id){
+		return self::where('menu_id', $id)->get();
+	}
+	public function updateMenu($update_id, $update_title, $update_level){
+		self::where('menu_id', $update_id)->update(array(
+			'menu_title' => $update_title,
+			'menu_level' => $update_level));
+	}
+	public function deleteMenu($id){
+		self::where('menu_id', $id)->delete();
+	}
+	public function addMenu($id, $add_menu_title, $add_menu_level, $add_menu_parents){
+		$menu = new self;
 
+		$menu->menu_id = $id;
+		$menu->menu_title = $add_menu_title;
+		$menu->menu_level = $add_menu_level;
+		$menu->menu_parents = $add_menu_parents;
+
+		$menu->save();
+	}
+	
 	public $result = null;
 	public function getData($key){
 		$hierarchy = self::where('menu_parents', "")->get();
