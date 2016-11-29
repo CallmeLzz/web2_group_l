@@ -1,14 +1,19 @@
 <div class="left-menu">
     <ul>
         <li>
-            menu
+            Menu
         </li>
         <li class="divider"></li>
         <li>
-            <a href="#">Tables</a>
+            <a href="admin"> Admin Page </a>
         </li>
         <li>
-            <a href="#">File Manager</a>
+            Add
+            <ul>
+                <li><a href="addView"> Menus </a></li>
+                <li><a href="#"> Prices </a></li>
+                <li><a href="#"> Reservations </a></li>
+            </ul>
         </li>
     </ul>
 </div>

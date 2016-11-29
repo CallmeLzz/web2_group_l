@@ -53,6 +53,21 @@ class AdminController extends Controller
     	$menu = new Menus();
         $result_menu = $menu->addMenu($id, $menu_title, $menu_level, $menu_parents);
 
-    	return redirect()->to('/admin');
+        if ($result_menu != null){
+            return response()->view('front.admin.add.index', ['message'=> $result_menu]);
+        }
+    	else return redirect()->to('/admin');
+    }
+    /*=============================== SEARCH ===============================*/
+    public function searchMenu(Request $request){
+        $key = $request->input('key');
+        $type = $request->input('type');
+
+        $menu = new Menus();
+        $result_menu = $menu->searchMenu($type, $key);
+
+        /*var_dump($result_menu->toArray());
+        die();*/
+        return view('front.admin.search.index')->with('searchResult', $result_menu);
     }
 }

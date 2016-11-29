@@ -1,8 +1,8 @@
 <div class="admin-content">
     <div class="main">
-        <div>
+        <!-- <div>
             <a href="addView" class="btn btn-danger pull left" style="margin-right:3px;">Add</a>
-        </div>
+        </div> -->
         <table style="width: 100%">
             <tr>
                 <th>ID</th>

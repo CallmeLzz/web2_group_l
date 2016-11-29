@@ -37,3 +37,4 @@ Route::get('/update', 'AdminController@update');
 Route::get('/delete', 'AdminController@delete');
 Route::get('/addView', 'AdminController@addView');
 Route::get('/add', 'AdminController@add');
+Route::get('/search', 'AdminController@searchMenu');
