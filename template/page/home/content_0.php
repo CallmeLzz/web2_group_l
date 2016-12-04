@@ -1,43 +1,17 @@
-<div class="type_16_reservation">
-	<div class="vc_row wpb_row vc_row-fluid vc_custom_1436823427497 vc_row-has-fill vc_customer">
-		<div class="wpb_column vc_column_container vc_col-sm-12">
+<div class="type_16_content_0">
+	<div class="vc_row wpb_row vc_row-fluid">
+		<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-sm-offset-2">
 			<div class="vc_column-inner ">
-				<form role="form" class="row" action="/" id="prefill-form-14">
-					<div class="col-md-3">
-						<label class="sr-only">Arrival Date</label>
-						<input type="text" class="form-control" placeholder="Arrival Date" value="">
+				<div class="wpb_wrapper">
+					<div class="wpb_text_column wpb_content_element ">
+						<div class="wpb_wrapper">
+							<h1 style="text-align: center;"><small>What can you do with the Leisure Template?</small>AWARD WINNING RESORT</h1>
+							<p class="lead" style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non ornare eros. Ut pharetra ornare lorem, sit amet bibendum quam imperdiet ut.</p>
+							<p style="text-align: center;">Duis diam eros, dignissim sed condimentum ac, vehicula nec nisl. Suspendisse condimentum libero tempus, accumsan augue et, varius dui. Morbi justo tortor, tincidunt ornare magna ut, molestie mattis enim. Cras ac justo et augue suscipit euismod vel eget lectus. Proin vehicula nunc arcu, pulvinar accumsan.</p>
+							<p style="text-align: center;"><a class="btn-inline btn" href="#">What is happening at the Leisure Center?</a></p>
+						</div>
 					</div>
-
-					<div class="col-md-3">
-						<label class="sr-only">Departure Date</label>
-						<input type="text" class="form-control" placeholder="Departure Date" value="">
-					</div>
-
-					<div class="col-md-2">
-						<label class="sr-only">Room Type</label>
-						<select class="form-control ">
-							<option value="Round Cove Suite">Round Cove Suite</option>
-							<option value="Signature Water View">Signature Water View</option>
-							<option value="Signature Water Side">Signature Water Side</option>
-							<option value="Signature Junior Suite">Signature Junior Suite</option>
-						</select>
-					</div>
-
-					<div class="col-md-2">
-						<label class="sr-only">Adults</label>
-						<select class="form-control ">
-							<option value="1 Adult">1 Adult</option>
-							<option value="2 Adults">2 Adults</option>
-							<option value="3 Adults">3 Adults</option>
-							<option value="4 Adults">4 Adults</option>
-							<option value="5 Adults">5 Adults</option>
-							<option value="6 Adults">6 Adults</option>
-						</select>
-					</div>
-					<div class="col-md-2">
-						<input type="button" class="btn btn-primary  btn-block" name="Make Reservation" value="Make Reservation">
-					</div>
-				</form>
+				</div>
 			</div>
 		</div>
 	</div>
