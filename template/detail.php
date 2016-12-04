@@ -13,6 +13,7 @@
             $less = new lessc;
             /*======================== Mine ========================*/
                 $less->compileFile('less/masterpage/type_16_weather.less', 'css/masterpage/type_16_weather.css');
+                $less->compileFile('less/detail/book_this_room.less', 'css/detail/book_this_room.css');
             /*======================== endMine ========================*/
 
             /*======================== ST ========================*/
@@ -33,6 +34,7 @@
             <link rel="stylesheet" type="text/css" href="css/weather-icons.min.css">
             <link rel="stylesheet" type="text/css" href="css/js_composer.min.css">
             <link rel="stylesheet" type="text/css" href="css/masterpage/type_16_weather.css">
+            <link rel="stylesheet" type="text/css" href="css/detail/book_this_room.css">
         <!-- ======================== endMine ======================== -->
 
         <!-- ======================== ST ======================== -->
@@ -54,8 +56,10 @@
         <?php include'page/masterpage/weather.php'; ?>
         <?php include'page/masterpage/top-nav.php'; ?>
 
+        <?php include'page/category/list_1.php'; ?>
         <?php include'page/detail/detail_1.php'; ?>
         <?php include'page/detail/detail_2.php'; ?>
+        <?php include'page/detail/book_this_room.php'; ?>
 
         <?php include'page/masterpage/footer.php'; ?>
     </body>
