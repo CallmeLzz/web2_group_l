@@ -14,6 +14,7 @@
             /*======================== Mine ========================*/
                 $less->compileFile('less/masterpage/type_16_weather.less', 'css/masterpage/type_16_weather.css');
                 $less->compileFile('less/category/type_16_junior_suite.less', 'css/category/type_16_junior_suite.css');
+                $less->compileFile('less/category/type_16_cate_0.less', 'css/category/type_16_cate_0.css');
                 $less->compileFile('less/category/type_16_make_reservation.less', 'css/category/type_16_make_reservation.css');
             /*======================== endMine ========================*/
             
@@ -38,6 +39,7 @@
             <link rel="stylesheet" type="text/css" href="css/js_composer.min.css">
             <link rel="stylesheet" type="text/css" href="css/masterpage/type_16_weather.css">
             <link rel="stylesheet" type="text/css" href="css/category/type_16_junior_suite.css">
+            <link rel="stylesheet" type="text/css" href="css/category/type_16_cate_0.css">
             <link rel="stylesheet" type="text/css" href="css/category/type_16_make_reservation.css">
         <!-- ======================== endMine ======================== -->
 
@@ -64,6 +66,7 @@
         <?php include'page/category/list_1.php'; ?>
         <?php include'page/category/list_2.php'; ?>
         <?php include'page/category/round_cove.php'; ?>
+        <?php include'page/category/cate_0.php'; ?>
         <?php include'page/category/junior_suite.php'; ?>
         <?php include'page/category/make_reservation.php'; ?>
 
