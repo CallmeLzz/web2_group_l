@@ -31,10 +31,31 @@ Route::get('/administrator', [
 	'as' => 'administrator',
 	'uses' => 'AuthenticationController@index'
 	]);*/
-Route::get('/admin', 'AdminController@index');
-Route::get('/edit', 'AdminController@edit');
-Route::get('/update', 'AdminController@update');
-Route::get('/delete', 'AdminController@delete');
-Route::get('/addView', 'AdminController@addView');
-Route::get('/add', 'AdminController@add');
-Route::get('/search', 'AdminController@searchMenu');
+//================================== Admin Page ==================================//
+Route::get('/admin/page', [
+	'as' => 'admin',
+	'uses' => 'AdminController@index'
+	]);
+Route::get('/admin/page/menu', [
+	'as' => 'admin.menu',
+	'uses' => 'AdminController@menuView'
+	]);
+//================================== Function ==================================//
+Route::get('/admin/edit', [
+	'as' => 'edit',
+	'uses' => 'AdminController@edit'
+	]);
+Route::get('/admin/delete', [
+	'as' => 'delete',
+	'uses' => 'AdminController@delete'
+	]);
+Route::get('/admin/add', [
+	'as' => 'add',
+	'uses' => 'AdminController@add'
+	]);
+Route::get('/admin/search', [
+	'as' => 'search',
+	'uses' => 'AdminController@searchMenu'
+	]);
+Route::get('/admin/uploadFileView', 'AdminController@uploadFileView');
+Route::post('/admin/uploadFile', 'AdminController@uploadFile');
