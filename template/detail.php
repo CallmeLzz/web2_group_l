@@ -2,7 +2,7 @@
 
 <html style="background-color: #f3f3f4;">
     <head>
-        <title> Web2 - Home </title>
+        <title> Web2 - Detail </title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
