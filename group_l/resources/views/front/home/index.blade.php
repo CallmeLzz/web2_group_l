@@ -2,9 +2,6 @@
 
 @section('title', 'Home')
 
-@section('script')
-	<script src="js/script.js"></script>
-@stop
 
 @section('content')
 

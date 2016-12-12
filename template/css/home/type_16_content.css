@@ -31,6 +31,9 @@
   top: 57px;
   z-index: 1;
 }
+.type_16_content .vc_row a {
+  text-decoration: none;
+}
 .type_16_content .vc_row .parallax-image:nth-of-type(2) {
   -webkit-transform: rotate(7deg);
   transform: rotate(7deg);

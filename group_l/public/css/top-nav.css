@@ -38,6 +38,7 @@
   color: #c0392b;
 }
 .top-nav .top-menu .sub-menu {
+  z-index: 1;
   display: none;
   position: absolute;
   padding: 0;

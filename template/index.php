@@ -16,8 +16,8 @@
                 $less->compileFile('less/home/type_16_content.less', 'css/home/type_16_content.css');
                 $less->compileFile('less/home/type_16_reservation.less', 'css/home/type_16_reservation.css');
                 $less->compileFile('less/home/type_16_content_0.less', 'css/home/type_16_content_0.css');
-                $less->compileFile('less/home/type_16_content_2.less', 'css/home/type_16_content_2.css');
-            /*======================== endMine ========================*/
+/*                $less->compileFile('less/home/type_16_content_2.less', 'css/home/type_16_content_2.css');
+*/            /*======================== endMine ========================*/
             
             /*======================== ST ========================*/
                 $less->compileFile('less/home/top-nav.less', 'css/home/top-nav.css');
@@ -40,8 +40,8 @@
             <link rel="stylesheet" type="text/css" href="css/home/type_16_content.css">
             <link rel="stylesheet" type="text/css" href="css/home/type_16_reservation.css">
             <link rel="stylesheet" type="text/css" href="css/home/type_16_content_0.css">
-            <link rel="stylesheet" type="text/css" href="css/home/type_16_content_2.css">
-            <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+<!--             <link rel="stylesheet" type="text/css" href="css/home/type_16_content_2.css">
+ -->            <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
             <script type="text/javascript" src="js/owl.carousel.js"></script>
         <!-- ======================== endMine ======================== -->
 
@@ -67,12 +67,12 @@
         <?php include'page/masterpage/weather.php'; ?>
         
         <?php //include'page/masterpage/top-nav.php'; ?>
-        <?php //include'page/home/banner.php'; ?>
+        <?php include'page/home/banner.php'; ?>
 
         <?php include'page/home/reservation.php'; ?>
         <?php include'page/home/content_0.php'; ?>
         <?php include'page/home/content_1.php'; ?>
-        <?php include'page/home/content_2.php'; ?>
+        <?php //include'page/home/content_2.php'; ?>
 
         <?php include'page/masterpage/footer.php'; ?>
     </body>

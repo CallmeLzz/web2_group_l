@@ -1,8 +1,5 @@
 <?php $__env->startSection('title', 'Home'); ?>
 
-<?php $__env->startSection('script'); ?>
-	<script src="js/script.js"></script>
-<?php $__env->stopSection(); ?>
 
 <?php $__env->startSection('content'); ?>
 

@@ -1,7 +1,4 @@
 <div class="type-34">
-    <div id="myProgress">
-        <div id="myBar"></div>
-    </div>
     <div class="banner owl-carousel owl-theme">
         <div class="item">
             <img src="../../images/home/photodune-1256180-luxury-hotel-resort-at-twilight-m.jpg">
